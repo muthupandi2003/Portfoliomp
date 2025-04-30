@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100%;
+    position: sticky !important;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 5px 8px rgba(0,0,0,.5);
+}
+.navbar-brand{
+    font-weight: 600;
+}
+.nav-link{
+    color: white !important;
+    border-bottom: 1px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+top: 0;
+box-shadow: 0px 5px 8px rgba(0,0,0,.5);
+}
+.navbar-brand{
+font-weight: 600;
+}
+.nav-link{
+color: white !important;
+border-bottom: 1px solid transparent;
+}
+.nav-link:hover{
+border-bottom: 1px solid white;
+
+}
+
+section{
+width: 100%;
+min-height: 100vh;
+}
+
+/* Home Section */
+
+#home{
+width: 100%;
+height:100vh;
+background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(1693966684485.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+color: wheat;
+flex-direction: column;
+}
+#home p{
+    position: absolute;
+    top: 50%;
+    font-size: 100px;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}
+
+#home p:nth-child(1){
+    animation-delay: 0s;
+}
+#home p:nth-child(2){
+    animation-delay: 3s;
+}
+#home p:nth-child(3){
+    animation-delay: 6s;
+}
+#home p:nth-child(4){
+    animation-delay: 9s;
+}
+@keyframes text{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#home span{
+    color: blue;
+}
+
+@media screen and (max-width:576px){
+    #home p{font-size: 80px;
+
+    }
+
+}
+
+/* About Section */
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff75a0;
+}
+.circle{
+    width: 400px;
+    height: 400px;
+    background: #e93b81;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+    margin-bottom: 3px;
+    margin-top: 8%;
+    transition: 1s;
+}
+.circle img{
+    position: absolute;
+    height: 350px;
+    top: -20%;
+    left: 6%;
+    border-radius: 50%;
+    filter: drop-shadow(0px 30px 15px rgba(0,0,0,.4));
+    transition: 1s;
+}
+.circle.hover{
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.circle:hover img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.circle:hover .content{
+    position: absolute;
+    top: 15;
+    right: 0;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+
+/* Skill Section */
+
+#skills{
+    padding-top: 5px;
+    background: #e5e5e5;
+}
+#Skills .container{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+label{
+    font-size: 20px;
+}
+.progress{
+    height: 30px !important;
+    box-shadow: 2px 4px 5px gray,-2px -2px 5px white;
+}
+.progress:hover{
+    box-shadow: 2px 4px 5px white, -2px -2px 5px gray;
+}
+
+
+/*  Projects Section  */
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    background: linear-gradient(75deg,skyblue,violet);
+}
+.carousel{
+    width: 80%;
+    height: 80vh;
+    background: blue;
+    box-shadow: 10px 20px 10px rgba(0,0,0,.4);
+}
+iframe{
+    width: 100%;
+    height: 80vh;
+
+}
+@media screen and(max width:576px) {
+    .carousel{
+        width: 90%;
+        height: 50vh;
+        background: blue;
+        box-shadow: 10px 20px 10px rgba(0,0,0,.4);
+    }
+    iframe{
+        width: 100%;
+        height: 50vh;
+    
+    }
+}
+
+/*  Pricing Section  */
+   #Pricing{
+    padding-top: 5%;
+   } 
+   .card{
+    margin-top: 15%;
+   }
+   .card:hover{
+    box-shadow: 8px 8px 15px rgba(0,0,0,.4); 
+    transition: .2s;
+   }
+
+/*  Contact Section  */
+#Contact{
+    padding-top: 7%;
+    background-color: antiquewhite;
+}
+#Contact iframe{
+    box-shadow: 15px 20px 10px rgba(0,0,0,.4); 
+}
+
+
+/* Hire Me Section  */
+#Hire_Me{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    color: #e93b81;
+    text-align: center;
+}
+.video-container{
+    text-align: center;
+    background-color: grey;
+    width: 100%;
+
+}
+
+}
